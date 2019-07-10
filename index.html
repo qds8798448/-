@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link href="style.css" type="text/css" rel="stylesheet"> 
+		<!--定义移动端-->
+		<meta name="viewport" content="width=375,user-scalable=no" />
+	</head>
+	<body>
+		<div class="header">
+			<div class="logo">ToDoList</div>
+			<div class="input">
+				<input type="text" name="write" id="write" placeholder="请输入待办事项">
+			</div>
+		</div>
+			<div class="main">
+				<div class="list todo"> 
+					<h1>
+						<span class="title">正在进行</span>
+						<span class="number">0</span>
+					</h1>
+					<div class="clist">
+						<div class="item">
+							<span class="checkbox">
+								<input type="checkbox" name="check" value="">
+							</span>
+							<span class="content">
+								
+							</span>
+							<span class="delete">
+								
+							</span>
+						</div>
+					</div>
+				</div>
+				<div class="list done">
+					<h1>
+						<span class="title">已经完成</span>
+						<span class="number">0</span>
+					</h1>
+					<div class="clist">
+						
+					</div>
+				</div>
+			</div>
+			<script src="todojs.js" type="text/javascript"></script>
+	</body>
+</html>

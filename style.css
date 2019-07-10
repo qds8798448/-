@@ -1,0 +1,123 @@
+*{
+	margin: 0;
+	padding: 0;
+	/*定义盒子模型,设置元素的宽度和高度不会因为设置padding和border改变*/
+	box-sizing: border-box;
+}
+
+
+body{
+	width: 375px;
+	background: #efefef;
+}
+.header{
+	width: 375px;
+	height: 50px;
+	background: rgba(47,47,47,0.98);
+	display: flex;
+}
+.header .logo{
+	color: #fff;
+	width: 100px;
+	text-align: center;
+	line-height: 50px;
+	font-size: 19px;
+	
+}
+.header .input{
+	color: #fff;
+	width: 275px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+}
+.header .input input{
+	border:none;
+	/*去掉选中时的黄色的区域*/
+	outline:none;
+	width: 250px;
+    height: 30px;
+	border-radius: 5px;
+	padding: 0 20px;
+	
+}
+/*直接子元素选择器的写法*/
+.list>h1{
+	margin: 20px;
+	font-size: 20px;
+	display: flex;
+	justify-content: space-between;
+}
+.done>h1 .number{
+	/*自动撑开*/
+	width: auto;
+	padding: 0 15px;
+	height: 25px;
+	border-radius: 20px;
+	background: greenyellow;
+	color: #fff;
+	font-size: 15px;
+	text-align: center;
+	line-height: 25px;
+}
+.todo>h1 .number{
+	/*自动撑开*/
+	width: auto;
+	padding: 0 15px;
+	height: 25px;
+	border-radius: 20px;
+	background: deeppink;
+	color: #fff;
+	font-size: 15px;
+	text-align: center;
+	line-height: 25px;
+}
+
+.item{
+	margin: 5px 20px;
+	display: flex;
+	align-items: center;
+	background: #fff;
+	border-radius: 5px;
+	padding: 5px 15px;
+	position: relative;
+	justify-content: space-between;
+}
+.item:before{
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 5px;
+	height: 100%;
+	background: greenyellow;
+	border-bottom-left-radius: 5px;
+	border-top-left-radius: 5px;
+	
+}
+.item .checkbox{
+	display: flex;
+	align-items: center;
+}
+.item .checkbox input{
+	width: 22px;
+	height: 22px;
+	outline: none;	
+}
+.item .content{
+	width: 260px;
+	padding: 0 10px;
+	line-height: 22px;
+}
+.item .delete{
+	width: 22px;
+	height: 22px;
+	background: url(delete.png);
+	background-size: 80%;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.main{
+	width: 375px;
+}
